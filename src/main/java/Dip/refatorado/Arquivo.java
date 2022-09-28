@@ -8,6 +8,9 @@ public class Arquivo {
     private Formato dispositivo;
     
     public Arquivo(Formato dispositivo) {
+        if (dispositivo == null) {
+            throw new NullPointerException("Dispositivo invalido");
+        }
         this.dispositivo = dispositivo;
     }
 
@@ -19,8 +22,8 @@ public class Arquivo {
         this.conteudo = conteudo;
     }  
     
-    public void imprimir() {
-        this.dispositivo.imprimir(conteudo);
+    public String imprimir() {
+        return this.dispositivo.imprimir(conteudo);
     }
     
 }

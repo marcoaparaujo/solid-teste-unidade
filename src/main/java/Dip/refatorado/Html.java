@@ -5,7 +5,7 @@ package Dip.refatorado;
 
 public class Html implements Formato {
    
-    public void imprimir(String conteudo) {
-        System.out.println("HTML: " + conteudo);
+    public String imprimir(String conteudo) {
+        return "HTML: " + conteudo;
     }
 }

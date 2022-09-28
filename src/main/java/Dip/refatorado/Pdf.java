@@ -5,7 +5,7 @@ package Dip.refatorado;
 
 public class Pdf implements Formato {
 
-    public void imprimir(String conteudo) {
-        System.out.println("PDF: " + conteudo);
+    public String imprimir(String conteudo) {
+        return "PDF: " + conteudo;
     }
 }

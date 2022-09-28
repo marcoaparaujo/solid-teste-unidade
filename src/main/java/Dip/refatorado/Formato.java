@@ -5,5 +5,5 @@ package Dip.refatorado;
 
 public interface Formato {
     
-    public void imprimir(String conteudo);
+    public String imprimir(String conteudo);
 }
